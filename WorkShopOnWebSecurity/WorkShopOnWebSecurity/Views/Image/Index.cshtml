@@ -1,0 +1,17 @@
+﻿@model WorkShopOnWebSecurity.Models.ImageViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Images</h2>
+
+@foreach (var image in Model.Images)
+{
+<tr>
+
+    @Html.ActionLink(image.Substring(13, image.Length - 13), "Download", "Download", new { path = image }, null)
+    <br/>
+</tr>
+    
+}
+

